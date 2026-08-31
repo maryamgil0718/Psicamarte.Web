@@ -1,0 +1,12 @@
+{
+  "entradas": [
+    {
+      "titulo": "Bienvenida al Universo Psicamarte",
+      "linea": "Blends",
+      "resumen": "Esta es una entrada de ejemplo. Puedes editarla o borrarla desde el panel de administración en /admin.",
+      "contenido": "Aquí va el texto completo de tu Blends, Psicamook, Vision o Lab. Puedes escribir varios párrafos, y se mostrará completo cuando alguien haga clic en la píldora.\n\nEdítalo o bórralo desde /admin cuando publiques tu primer contenido real.",
+      "imagen": "",
+      "fecha": "2026-08-30"
+    }
+  ]
+}

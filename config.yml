@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "content/imagenes"
+public_folder: "content/imagenes"
+
+locale: "es"
+
+collections:
+  - name: "universo"
+    label: "Universo Psicamarte"
+    files:
+      - name: "contenido"
+        label: "Todas las entradas"
+        file: "content/universo.json"
+        fields:
+          - label: "Entradas"
+            name: "entradas"
+            widget: "list"
+            summary: "{{fields.linea}} — {{fields.titulo}}"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string" }
+              - label: "Línea"
+                name: "linea"
+                widget: "select"
+                options: ["Psicamooks", "Blends", "Visions", "Lab"]
+              - { label: "Resumen breve", name: "resumen", widget: "text", required: false, hint: "Se usa si no escribes contenido completo." }
+              - { label: "Contenido completo", name: "contenido", widget: "text", required: false }
+              - { label: "Imagen", name: "imagen", widget: "image", required: false }
+              - { label: "Fecha", name: "fecha", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
